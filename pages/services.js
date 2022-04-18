@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    // <div className={styles.container}>
     <div>
       <Head>
         <title>Services</title>
@@ -18,10 +18,6 @@ export default function About() {
 
         <h1>Services</h1>
 
-        <p>
-          EliWeb offers high quality Web design and development services. 
-          <br/>
-        </p>
         <ul>
             <li>Design websites </li>
             <li>Develop web applications </li>
@@ -32,6 +28,7 @@ export default function About() {
             <li>Domain and hosting  </li>
             <li>Support </li>
           </ul>
+          <br/>
           <Image
           className="image"
           src="/img/price2.jpg"
@@ -39,9 +36,8 @@ export default function About() {
           width="945"
           height="280"
         />
-
-
       </main>
+      <Footer/>
     </div>
   );
 }

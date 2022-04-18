@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -27,29 +28,23 @@ export default function About() {
 
         <h1>Contact Us</h1>
 
-        <p>
         <div><b>Email: </b> info@eliweb.me</div> 
         <div><b>Phone Number: </b> 657555555</div>
-        </p>
-
-        <section className='contact'>
-        <form id="form" >   
-        <br/>
-        <h1>Get In Touch</h1> 
-        <br/>
-        <div >     
-            <input  type="text" placeholder="Your Name" id="name" minLength="2" required></input>
-            <input  type="email" placeholder="Your Email" id="email"  className='email'></input>
-        </div> 
-            <textarea placeholder="Your message" id="message"  minLength="3" required></textarea>
-            <br/>
-            <button type="submit" >Submit</button>
-        </form> 
-        <br/>
-        <br/> 
-     </section>
+      
+            <section className='contact'>
+            <form id="form" >   
+                <div >     
+                    <input  type="text" placeholder="Your Name" id="name" minLength="2" required></input>
+                    <input  type="email" placeholder="Your Email" id="email"  className='email'></input>
+                </div> 
+                <textarea placeholder="Your message" id="message"  minLength="3" required></textarea>
+                <br/>
+                <button type="submit" >Submit</button>
+            </form>  
+            </section>
 
       </main>
+      <Footer/>
     </div>
   );
 }
